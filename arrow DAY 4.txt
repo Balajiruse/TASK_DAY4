@@ -1,0 +1,96 @@
+// arrow 
+
+a.Print odd numbers in an array
+
+const arrodd= [1,2,3,4,5,6,7,8,9,10];
+const odd = (arr) =>
+ 
+{
+    for (let i=0; i<=arr.length;i++)
+    {
+        if (arr[i] %2 !==0 )
+        {
+            console.log(arr[i]);
+        }
+    }
+}
+odd(arrodd);
+
+------------------------------------------------------------------------------------------
+B.Convert all the strings to title caps in a string array
+
+//Arrow
+
+const caps =  () => {
+    let str=("hello world".toLowerCase().split(" "));
+ 
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  console.log(str.join(" "));
+}
+caps()
+
+
+----------------------------------------------------------------------------------------------
+c.Sum of all numbers in an array
+
+
+//Arrow
+const sum =  () =>
+{
+    let str =[50,55,50];
+    let sum =0;
+
+    for (let i=0; i<str.length;i++){
+        sum+=str[i];
+    }
+    console.log(sum);
+}
+sum();
+
+---------------------------------------------------------------------------------------------
+
+d.Return all the prime numbers in an array
+
+//arrow
+
+const primenumber=() => {
+    let numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10,11];
+    
+    numArray = numArray.filter((number) => {
+      for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) return false;
+      }
+      return true;
+    });
+    
+    console.log(numArray);
+    };
+    primenumber();
+--------------------------------------------------------------------------------------------------
+
+E.Return all the palindromes in an array
+
+//arrow
+const ask= ()=>{
+    let myArray = ['dad', 'cecarar', 'honda', 'malayalam'];   
+   let b = myArray.filter(function(c,d){
+   let Cur = c.split('').reverse().join('');
+   if(c == Cur){
+   console.log( myArray[d] );
+   }
+   });
+   
+ };
+ ask();
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
